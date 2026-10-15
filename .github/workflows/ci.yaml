@@ -21,9 +21,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Executar testes com relatório HTML
-        run: >
-          behave -f behave_html_formatter:HTMLFormatter -o
-          reports/relatorio_testes.html
+        run: |
+          behave -f html -o reports/relatorio_testes.html
       - name: Salvar relatório e evidências como artefatos
         if: always()
         uses: actions/upload-artifact@v4
