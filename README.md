@@ -1,5 +1,5 @@
 # python-selenium-web-test
-[![python-selenium-web-test](https://github.com/rlhorochovec/python-selenium-web-test/actions/workflows/ci.yml/badge.svg)](https://github.com/rlhorochovec/python-selenium-web-test/actions/workflows/ci.yml)
+[![python-selenium-web-test](https://github.com/rlhorochovec/python-selenium-web-test/actions/workflows/ci.yaml/badge.svg)](https://github.com/rlhorochovec/python-selenium-web-test/actions/workflows/ci.yaml)
 
 Projeto de automação de testes web utilizando Python, Selenium e Behave com GitHub Actions.
 
@@ -33,8 +33,5 @@ Gerar o Behave Report
   reports/relatorio_testes.html
 ```
 
-Visualizar relatório dos testes do robot publicados
+Visualizar relatório dos testes publicado
 [Visualizar](https://rlhorochovec.github.io/python-selenium-web-test/reports/relatorio_testes.html)
-
-## Screenshots
-<img src="https://github.com/rlhorochovec/python-selenium-web-test/blob/develop/screenshots/grafana_dark.png" width="400" />
