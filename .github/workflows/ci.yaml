@@ -1,28 +1,33 @@
-name: Testes Automatizados com Selenium
+name: python-selenium-web-test
 'on':
   push:
     branches:
       - develop
       - main
   workflow_dispatch:
+
 jobs:
-  testar:
+  executar-testes:
     runs-on: ubuntu-latest
     steps:
       - name: Copiar código do repositório
         uses: actions/checkout@v4
+
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
           cache: pip
+
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Executar testes com relatório HTML
         run: |
           behave -f html -o reports/relatorio_testes.html
+
       - name: Salvar relatório e evidências como artefatos
         if: always()
         uses: actions/upload-artifact@v4
@@ -31,7 +36,8 @@ jobs:
           path: |
             reports/relatorio_testes.html
             reports/screenshots/
-      - name: Deploy Behave Report to GitHub Pages
+
+      - name: Deploy Behave Report
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
