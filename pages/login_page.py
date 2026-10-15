@@ -8,7 +8,7 @@ class LoginPage:
         self.password_input = (By.ID, "senha")
         self.login_button = (By.XPATH, "/html/body/main/form/button")
         self.flash_message = (By.ID, "erro")
-        self.login_success = (By.ID, "h1")
+        self.login_success = (By.XPATH, "/html/body/header[2]/div/div/div/h1")
 
     def abrir(self):
         self.driver.get(self.url)

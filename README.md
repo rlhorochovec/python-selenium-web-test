@@ -34,7 +34,7 @@ Gerar o Behave Report
 ```
 
 Visualizar relatório dos testes do robot publicados
-[Visualizar]
+[Visualizar](https://rlhorochovec.github.io/python-selenium-web-test/reports/relatorio_testes.html)
 
 ## Screenshots
 <img src="https://github.com/rlhorochovec/python-selenium-web-test/blob/develop/screenshots/grafana_dark.png" width="400" />
