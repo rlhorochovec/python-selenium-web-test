@@ -34,4 +34,4 @@ Gerar o Behave Report
 ```
 
 Visualizar relatório dos testes publicado
-[Visualizar](https://rlhorochovec.github.io/python-selenium-web-test/reports/relatorio_testes.html)
+[Visualizar](https://rlhorochovec.github.io/python-selenium-web-test/relatorio_testes.html)
