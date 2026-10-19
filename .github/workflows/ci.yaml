@@ -1,4 +1,4 @@
-name: python-selenium-web-test
+name: Testes com Python e Selenium
 'on':
   push:
     branches:
@@ -7,7 +7,8 @@ name: python-selenium-web-test
   workflow_dispatch:
 
 jobs:
-  executar-testes:
+  python-run:
+    name: Executar testes com Python e Selenium
     runs-on: ubuntu-latest
     steps:
       - name: Copiar código do repositório
